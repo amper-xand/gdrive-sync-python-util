@@ -6,13 +6,6 @@ It provides basic functionality for uploading, downloading, updating, and syncin
 
 If you are looking for something you want to use in a larger scale consider using a tool like rclone.
 
-## Features
-
-- **Upload files to Google Drive**: Upload a local file to your Google Drive using service account credentials.
-- **Download files from Google Drive**: Download files from your Google Drive to your local system.
-- **Update files on Google Drive**: Update existing files on Google Drive with new local versions.
-- **Sync files**: Synchronize files between a local system and Google Drive, ensuring the most up-to-date version is reflected on both sides.
-
 ## How It Works
 
 The script works by reading a configuration file (`sync.json`),
@@ -24,7 +17,7 @@ It compares the local modification times with the remote ones to decide whether 
 
 1. **Configuration (`sync.json`)**
 
-    The `sync.json` file should contain information about your Google Drive credentials, root folder ID, and a list of files to synchronize. Here's an example:
+    The `sync.json` file should contain information about your Google Drive credentials, root folder ID, and a list of files to synchronize.
 
     ```json
     {
